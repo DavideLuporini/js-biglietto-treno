@@ -1,0 +1,11 @@
+.container {
+    height: 100vh;
+}
+
+.col-12 {
+    background-color: dodgerblue;
+}
+
+.row {
+    background-color: rgb(13, 112, 211);
+}
