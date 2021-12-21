@@ -15,7 +15,30 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 // 1) CHIDERE IL NUMERO DI KM CHE SI DESIDERA PERCORRERE
 // 2)CHIEDERE L'ETA' DEL PASSEGGERO
 
-console.log('js ok')
+console.log('js ok');
 
-const distancePrefered = prompt('Quale distanza desideri percorrere? (in km)')
-console.log(distancePrefered)
+// ask for the prefered distance
+
+const distancePrefered = prompt('Quale distanza desideri percorrere? (in km)');
+console.log(distancePrefered);
+
+
+// ask the age
+
+const age = prompt('Quanti anni hai?');
+console.log(age);
+
+// declaring price per km
+
+const pricePerKm = 0.21;
+
+// calculate pre discount price
+
+const preDiscountPrice = (distancePrefered * pricePerKm)
+console.log(preDiscountPrice)
+
+// apply discount
+
+if (age <= 18) {
+
+}
