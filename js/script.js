@@ -34,6 +34,8 @@ console.log(age);
 
 document.getElementById('age').innerHTML = `la tua atà è: ${age} anni `;
 
+
+
 // declaring price per km
 
 const pricePerKm = 0.21;
@@ -56,4 +58,6 @@ if (age >= 65) {
     const afterDiscountPrice = (price - price * 40 / 100).toFixed(2);
     document.getElementById('price').innerHTML = `Il prezzo del biglietto per il tuo viaggio è: ${afterDiscountPrice} € `;
     console.log(afterDiscountPrice)
+} else {
+    document.getElementById('price').innerHTML = `Il prezzo del biglietto per il tuo viaggio è: ${price} € `;
 }
