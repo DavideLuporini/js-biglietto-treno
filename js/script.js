@@ -34,11 +34,20 @@ const pricePerKm = 0.21;
 
 // calculate pre discount price
 
-const preDiscountPrice = (distancePrefered * pricePerKm)
-console.log(preDiscountPrice)
+const preDiscountPrice = (distancePrefered * pricePerKm);
+console.log(preDiscountPrice);
 
 // apply discount
 
 if (age <= 18) {
+    const afterDiscountPrice = (preDiscountPrice - preDiscountPrice * 20 / 100);
+    document.getElementById('price').innerHTML = `Il prezzo del biglietto per il tuo viaggio è: ${afterDiscountPrice} `;
+    console.log(afterDiscountPrice)
+}
 
+
+if (age >= 65) {
+    const afterDiscountPrice = (preDiscountPrice - preDiscountPrice * 40 / 100);
+    document.getElementById('price').innerHTML = `Il prezzo del biglietto per il tuo viaggio è: ${afterDiscountPrice} `;
+    console.log(afterDiscountPrice)
 }
